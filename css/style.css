@@ -194,3 +194,30 @@ body {
     text-align: center;
     padding: 3rem 0;
 }
+
+.encrip_salida {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mensalida {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 2rem;
+    height: 38rem;
+    border-radius: .5rem;
+    color: var(--azul);
+    resize: none;
+    border: none;
+
+}
+
+.boton__copiar {
+    background-color: var(--azul);
+    color: var(--blanco);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+}

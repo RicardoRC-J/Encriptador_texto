@@ -23,42 +23,50 @@
             <div class="contenedor1">
                 <div class="logo"></div>
                 <form class="formulario" action="">
-                    <textarea class="txtarea" name="" id="" placeholder="Ingrese el texto aquí"></textarea>
+                    <textarea class="txtarea" name="" id="textoEntrada" placeholder="Ingrese el texto aquí"></textarea>
                     <section class="sugerencia">
                         <i class="fa-solid fa-circle-exclamation excla"></i>
                         <p class="sugerencia__texto">Solo letras minúsculas y sin acento</p>
                     </section>
                     <div class="botones">
                         <div class="encriptar">
-                            <input class="boton boton__encriptar" type="button" value="Encriptar">
+                            <input class="boton boton__encriptar" type="button" value="Encriptar"
+                                onclick="encriptarTexto()">
                         </div>
                         <div class="desencriptador">
-                            <input class="boton boton__desencriptar" type="button" value="Desencriptar">
+                            <input class="boton boton__desencriptar" type="button" value="Desencriptar"
+                                onclick="desencriptarTexto()">
                         </div>
 
                     </div>
                 </form>
             </div>
             <div class="contenedor2">
-                <div class="encrip">
+                <div class="encrip" id="conten_nada">
                     <img class="encrip__imagen" src="img/Muneco.png" alt="">
                     <div class="encrip__contenido">
                         <p class="encrip__mensaje">Ningún mensaje fue encontrado</p>
                         <p class="encrip__ingresar">Ingresa el texto que desees encriptar o desencriptar.</p>
 
                     </div>
+                </div>
 
+                <div style="display: none;" class="encrip_salida" id="contenedorSalida">
+                    <textarea class="mensalida" id="mensajeSalida"></textarea>
+                    <button class="boton boton__copiar" id="copy-btn">Copiar</button>
                 </div>
 
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div class="footer">
             Creado por Ricardo
         </div>
     </footer>
+
+    <script src="js/scrip.js"></script>
 </body>
 
 </html>
